@@ -24,7 +24,7 @@
 
 [project]
 name = "cocotb-amba"
-version = ["dynamic"]
+dynamic = ["version"]
 description = "Collection of AMBA Masters and Slaves for cocotb"
 readme = "README.md"
 authors = [
