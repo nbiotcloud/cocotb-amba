@@ -24,7 +24,7 @@
 
 [project]
 name = "cocotb-amba"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Collection of AMBA Masters and Slaves for cocotb"
 readme = "README.md"
 authors = [
@@ -35,6 +35,8 @@ classifiers = [
 ]
 requires-python = ">=3.10.0,<4.0"
 dependencies = [
+    "cocotb>=1.9.2",
+    "humannum>=1.1.1"
 ]
 
 [project.urls]
@@ -45,6 +47,9 @@ dependencies = [
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[tool.pdm.version]
+source = "scm"
 
 [tool.pdm]
 [tool.pdm.dev-dependencies]
@@ -156,6 +161,10 @@ ignore = [
     'UP038',
     # Assert
     'S101',
+    # Format Strings
+    'G004',
+    # Complexity
+    'PLR0915',
 ]
 [tool.ruff.lint.per-file-ignores]
 "test_*" = [
