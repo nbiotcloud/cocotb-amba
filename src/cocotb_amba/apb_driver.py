@@ -75,13 +75,14 @@ class APBMasterDriver:
         data: int,
     ) -> bool:
         """APB Write."""
+        await RisingEdge(self.clk)
         self.paddr.value = addr
         self.pwdata.value = data
         self.pwrite.value = 1
-        self.penable.value = 1
-        self.psel.value = 0
-        await RisingEdge(self.clk)
         self.psel.value = 1
+        self.penable.value = 0
+        await RisingEdge(self.clk)
+        self.penable.value = 1
         await RisingEdge(self.clk)
         while self.pready == 0:
             await RisingEdge(self.clk)
