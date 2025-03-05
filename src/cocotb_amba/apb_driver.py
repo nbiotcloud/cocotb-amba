@@ -103,9 +103,9 @@ class APBMasterDriver:
         self.paddr.value = addr
         self.pwrite.value = 0
         await RisingEdge(self.clk)
-        self.penable.value = 1
-        await RisingEdge(self.clk)
         self.psel.value = 1
+        await RisingEdge(self.clk)
+        self.penable.value = 1
         await RisingEdge(self.clk)
         while self.pready == 0:
             await RisingEdge(self.clk)
