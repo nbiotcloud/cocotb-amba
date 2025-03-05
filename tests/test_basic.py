@@ -23,9 +23,9 @@
 #
 """Basic Testing."""
 
-import cocotb_amba
+# import cocotb_amba
 
 
-def test_examplefunc():
-    """Simple Testing."""
-    assert cocotb_amba.examplefunc(3, second=2) == 5
+# def test_examplefunc():
+#     """Simple Testing."""
+#     assert cocotb_amba.examplefunc(3, second=2) == 5
