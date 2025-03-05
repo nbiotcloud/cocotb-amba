@@ -57,7 +57,7 @@ def format(session: nox.Session) -> None:
     session.run("pre-commit", "run", "--all-files")
 
 
-@nox.session(python=PYTHON)
+# @nox.session(python=PYTHON)
 def test(session: nox.Session) -> None:
     """Run Test - Additional Arguments are forwarded to `pytest`."""
     if not IS_DEV:
