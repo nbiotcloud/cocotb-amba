@@ -2,7 +2,7 @@
 [![Python Build](https://github.com/nbiotcloud/cocotb-amba/actions/workflows/main.yml/badge.svg)](https://github.com/nbiotcloud/cocotb-amba/actions/workflows/main.yml)
 [![Documentation](https://readthedocs.org/projects/cocotb-amba/badge/?version=stable)](https://cocotb-amba.readthedocs.io/en/stable/)
 [![Coverage Status](https://coveralls.io/repos/github/nbiotcloud/cocotb-amba/badge.svg?branch=main)](https://coveralls.io/github/nbiotcloud/cocotb-amba?branch=main)
-[![versions](https://img.shields.io/pypi/pyversions/cocotb-amba.svg)](https://github.com/nbiotcloud/cocotb-amba)
+[![python-versions](https://img.shields.io/pypi/pyversions/cocotb-amba.svg)](https://pypi.python.org/pypi/cocotb-amba)
 
 # Collection of AMBA Masters and Slaves for cocotb
 

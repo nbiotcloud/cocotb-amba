@@ -1,7 +1,7 @@
 #
 # MIT License
 #
-# Copyright (c) 2024 nbiotcloud
+# Copyright (c) 2024-2025 nbiotcloud
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -21,7 +21,18 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-
 """
 Collection of AMBA Masters and Slaves for cocotb.
 """
+
+from .ahb_driver import AHBMasterDriver, BurstType, SizeType, TransType
+from .apb_driver import APBMasterDriver, APBSlaveDriver
+
+__all__ = [
+    "AHBMasterDriver",
+    "APBMasterDriver",
+    "APBSlaveDriver",
+    "BurstType",
+    "SizeType",
+    "TransType",
+]
